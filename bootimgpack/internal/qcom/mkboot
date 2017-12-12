@@ -18,8 +18,8 @@ trap "clean" 2 3 4
 workdir=$(pwd)
 toolpath=$(readlink -f $0)
 tooldir=$(dirname $toolpath)
-mkbootimg=$tooldir/mkbootimg
-mkbootfs=$tooldir/mkbootfs
+mkbootimg=$tooldir/mkbootimg_$HOST_OS
+mkbootfs=$tooldir/mkbootfs_$HOST_OS
 C_OUT="\033[0;1m"
 C_ERR="\033[31;1m"
 C_CLEAR="\033[0;0m"
